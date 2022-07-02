@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive E-commerce product page</title>
+    <!-- fontawesome cdnjs file link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- start header section  -->
+
+    <header>
+      <img src="./images/icon-menu.svg" class="hamburger" alt="" />
+
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+
+      <nav>
+        <img src="./images/icon-close.svg" class="menu-close" alt="" />
+
+        <ul class="nav-links">
+          <li><a href="#">collection</a></li>
+          <li><a href="#">men</a></li>
+          <li><a href="#">women</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-bar">
+        <img class="icon-cart" src="./images/icon-cart.svg" alt="" />
+        <img class="avatar" src="./images/image-avatar.png" alt="" />
+      </div>
+
+      <div class="cart-container">
+        <h3>cart</h3>
+        <div class="cart-info">
+          <img
+            src="./images/image-product-1-thumbnail.jpg"
+            class="cart-img"
+            alt=""
+          />
+          <div class="cart-meta">
+            <p>fall limited edition sneakers</p>
+            <div class="cart-total">
+              <span>$125.00 *</span>
+              <span class="cart-value">3</span>
+              <strong>$<span class="price-total">375</span>.00</strong>
+            </div>
+          </div>
+          <img src="./images/icon-delete.svg" class="del-btn" alt="" />
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </header>
+
+    <!-- end header section  -->
+
+    <!-- start product section  -->
+    <section id="product">
+      <div class="container">
+        <div class="left-content">
+          <div class="main-image">
+            <i class="fa-solid fa-angle-left prev-btn"></i>
+            <img src="./images/image-product-1.jpg" alt="" />
+            <i class="fa-solid fa-angle-right next-btn"></i>
+          </div>
+          <div class="small-image">
+            <img class="active" src="./images/image-product-1.jpg" alt="" />
+            <img src="./images/image-product-2.jpg" alt="" />
+            <img src="./images/image-product-3.jpg" alt="" />
+            <img src="./images/image-product-4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="pro-meta">
+            <span>sneaker company</span>
+            <h1>fall limited edition<br />sneakers</h1>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion
+              Featuring a durable rubber outer sole. they'll withstand
+              everything the weather can offer.
+            </p>
+          </div>
+          <div class="pro-details">
+            <div class="pricing">
+              <h2>
+                $<strong class="price">125</strong>.00
+                <span class="discount">50%</span>
+              </h2>
+              <span>$250.00</span>
+            </div>
+            <div class="cart-opt">
+              <div class="quantity">
+                <img src="./images/icon-minus.svg" class="minus-btn" alt="" />
+                <input type="text" disabled value="1" class="cart-num" />
+                <img src="./images/icon-plus.svg" class="plus-btn" alt="" />
+              </div>
+              <button class="cart-btn">
+                <img class="cart-icon" src="./images/icon-cart.svg" alt="" />Add
+                to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-area">
+        <div class="modal-area-wrapper">
+          <img src="./images/icon-close.svg" class="close-btn" alt="" />
+          <div class="top-content">
+            <i class="fa-solid fa-angle-left left-arrow arrow"></i>
+            <img src="./images/image-product-1.jpg" alt="" />
+            <i class="fa-solid fa-angle-right right-arrow arrow"></i>
+          </div>
+          <div class="bottom-content">
+            <img class="active" src="./images/image-product-1.jpg" alt="" />
+            <img src="./images/image-product-2.jpg" alt="" />
+            <img src="./images/image-product-3.jpg" alt="" />
+            <img src="./images/image-product-4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end product section  -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/MD-ANIKS" target="_blank"
+        >MD. ANIK</a
+      >.
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
