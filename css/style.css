@@ -108,7 +108,10 @@ header .user-bar img:hover {
 }
 
 header .user-bar .avatar {
-  width: 35px;
+  width:35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-left: 30px;
   cursor: pointer;
 }
